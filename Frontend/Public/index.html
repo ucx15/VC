@@ -13,15 +13,29 @@
 <body>
 
 	<h1>
-		<div id="conn-status" style="width: 10rem; height: .5rem; border: 2px solid black; background-color: orangered;"></div>
 		VC
 	</h1>
-
-	<button id="btn-send"> SEND: Socket Req </button>
-
-	<div id="msgs">
-		
+	<div id="conn-status" style="width: 10rem; height: .5rem; border: 2px solid black; background-color: orangered;">
 	</div>
+
+
+	<div class="content-area"
+		style="display: flex; flex-direction: column;justify-content: space-around; align-items: center;">
+		<div class="camera">
+			<video id="video">Video stream not available.</video>
+			<button id="start-button">Take photo</button>
+		</div>
+
+		<!-- my canvas -->
+		<canvas id="canvas" style="display: none;"></canvas>
+
+		Other canvas
+		<canvas id="other-canvas"> </canvas>
+
+	</div>
+
+
+
 </body>
 
 </html>

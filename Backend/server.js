@@ -57,7 +57,7 @@ wss.on('connection', (ws) => {
 	ws.on('message', (message) => {
 		const msg = JSON.parse(message);
 
-		if (msg.kind === 'msg') {
+		if (msg.kind === 'msg' || msg.kind === 'img') {
 			console.log('GOT:', msg);
 
 			// broadcast message to all clients
